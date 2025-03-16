@@ -1,14 +1,13 @@
 import { DinRoundPro } from '@/app/assets/google/fonts/DinRoundPro';
-import { HeaderComponents } from '@/app/components/header';
-import Header from '@/app/components/header/layout';
 import { FcGoogle } from 'react-icons/fc';
+import Header from '@/app/components/header/layout';
 
 export default function Login() {
   return (
     <>
       <Header />
       <section className="w-full h-full flex items-center justify-center">
-        <div className="w-[23.25rem] flex flex-col gap-4 items-center mx-10">
+        <div className="w-[23.25rem] flex flex-col gap-4 items-center max-md:px-3">
           <h2 className={`${DinRoundPro.className} text-[1.75rem] text-white font-bold leading-normal mb-4`}>Log in</h2>
           <form className={`${DinRoundPro.className} w-full flex flex-col gap-4`}>
             <input type="text" placeholder="E-mail or username" spellCheck="false" className="h-[2.5625rem] bg-[#161616] px-[0.9375rem] py-[0.625rem] outline-0 rounded-[0.625rem] border border-[#ffffff1d] placeholder:text-[#565656] placeholder:font-bold font-medium" />
